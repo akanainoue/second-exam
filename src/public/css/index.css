@@ -1,0 +1,179 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 40px auto 10px;
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 2rem;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+}
+
+.sidebar input,
+.sidebar select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.sidebar input {
+    border-radius: 20px;
+}
+
+.search-btn {
+    width: 100%;
+    background: #ffd700;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search{
+    margin-bottom: 20px;
+}
+
+.sort label {
+    font-weight: bold;
+}
+
+.sort label select option{
+    color: darkgray;
+}
+.sort-tag {
+    border-radius: 20px;
+    border: 1px solid #ffd700;
+    padding: 8px 15px;
+    width: 150px;
+}
+
+.sort-text {
+    margin-right: 5px;
+    font-size: 15px;
+    color: darkgray;
+}
+
+.sort-link {
+    text-decoration: none;
+    color: #ffd700;
+}
+
+.main{
+    width: 75%;
+    position: relative;
+}
+
+.product-card-link{
+    text-decoration: none;
+    color: black;
+}
+
+.product-list {
+    padding-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+}
+
+.description span {
+    display: block;
+}
+.description {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.add-btn {
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    background: #ffa500;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+} */
+
+.pagination {
+    margin:10px auto;
+    text-align: center;
+}
+
+
+/* ページネーション全体を中央揃え */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 0;
+    list-style: none;
+}
+
+/* 共通ボタンスタイル */
+.pagination li a,
+.pagination li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+}
+
+/* 現在のページ（黄色） */
+.pagination li.active span {
+    background-color: #ffcc00;
+    color: white;
+}
+
+/* 非アクティブリンク（ホバー時） */
+.pagination li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 無効なボタン（前・次の端） */
+.pagination li.disabled span {
+    color: #ccc;
+    cursor: not-allowed;
+}
