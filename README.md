@@ -30,7 +30,8 @@
 + MySQL8.0.26
 
 ## ER図
-![alt ER図](image.png)
+![image](https://github.com/user-attachments/assets/099ede8a-ec1e-41e4-a7ea-b889fef4d599)
+
 
 
 ## URL
